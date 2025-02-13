@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study MBBS Abroad - Apply Now for Top MBBS Programs in Russia, Uzbekistan, Kazakhstan, and More!">
+    <link rel="stylesheet" href="styles.css">
+    <title>Study MBBS Abroad</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+    <script async src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <script>
+        fbq('init', 'FB_PIXEL_ID'); 
+        fbq('track', 'PageView');
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <section class="bg-blue-600 text-white text-center py-16">
+        <h1 class="text-4xl font-bold">Apply Now for MBBS Abroad</h1>
+        <button class="mt-4 bg-white text-blue-600 px-6 py-3 rounded shadow">Get Free Consultation</button>
+    </section>
+
+    <section class="max-w-4xl mx-auto my-10 p-6 bg-white shadow rounded">
+        <h2 class="text-2xl font-bold">Why Study MBBS Abroad?</h2>
+        <p class="mt-2">Affordable fees, globally recognized universities, and high-quality education.</p>
+    </section>
+
+    <section class="max-w-5xl mx-auto my-10">
+        <h2 class="text-2xl font-bold text-center">Top Countries</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <div class="p-4 bg-white shadow rounded text-center">Russia</div>
+            <div class="p-4 bg-white shadow rounded text-center">Uzbekistan</div>
+            <div class="p-4 bg-white shadow rounded text-center">Kazakhstan</div>
+            <div class="p-4 bg-white shadow rounded text-center">Philippines</div>
+            <div class="p-4 bg-white shadow rounded text-center">Georgia</div>
+            <div class="p-4 bg-white shadow rounded text-center">Kyrgyzstan</div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto my-10 p-6 bg-white shadow rounded">
+        <h2 class="text-2xl font-bold">Admission Process & Eligibility</h2>
+        <ul class="mt-2 list-disc pl-6">
+            <li>Submit application</li>
+            <li>Meet eligibility criteria</li>
+            <li>Receive admission confirmation</li>
+            <li>Apply for visa</li>
+            <li>Travel and start studies</li>
+        </ul>
+    </section>
+
+    <section class="max-w-4xl mx-auto my-10 p-6 bg-blue-600 text-white shadow rounded">
+        <h2 class="text-2xl font-bold">Apply Now</h2>
+        <form id="leadForm" class="mt-4">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 mb-2 rounded" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 mb-2 rounded" required>
+            <input type="tel" id="phone" placeholder="Your Phone" class="w-full p-2 mb-2 rounded" required>
+            <select id="country" class="w-full p-2 mb-2 rounded" required>
+                <option value="">Select Preferred Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+            </select>
+            <button type="submit" class="w-full bg-white text-blue-600 py-2 rounded shadow">Submit</button>
+            <form id="leadForm" action="form-handler.php" method="POST">
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
